@@ -1,0 +1,112 @@
+.projects-containter {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 7;
+  margin: 1rem 1rem;
+  align-items: center;
+  justify-content: center; */
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.project-card {
+  width: 30rem;
+  max-width: 30rem;
+  height: 42rem;
+  background-color: #18181b;
+  border-radius: 30px;
+  border: white 0.000000000001px solid;
+  font-family: "Inter", sans-serif;
+  padding: 1.5rem;
+  overflow: hidden;
+  box-shadow: 20px 20px 20px 0 rgba(0, 128, 255, 0.15);
+  backdrop-filter: blur(5px);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.git-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.project-name {
+  text-align: center;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.project-img img {
+  margin-top: 1rem;
+  width: 28rem;
+  height: 16rem;
+  border-radius: 1rem;
+}
+
+.project-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.project-stack ul li {
+  list-style: none;
+  color: greenyellow;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.project-stack ul ::before {
+  content: "</> ";
+}
+
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+  .project-card {
+    width: 20rem;
+    height: 45rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-img img {
+    width: 20rem;
+    height: 10rem;
+  }
+}

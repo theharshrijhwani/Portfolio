@@ -1,0 +1,156 @@
+.connect-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-heading {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  width: 45vw;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.form-section form input {
+  width: 70%;
+  margin: 1.5rem 0;
+  background-color: gray;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+}
+
+.form-section form textarea {
+  font-family: "Inter", sans-serif;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 70%;
+  height: 11rem;
+  border: none;
+  outline: none;
+}
+
+.form-section form button {
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* CSS */
+.button-50 {
+  appearance: button;
+  color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+
+::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+.social-media {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media a span {
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .connect-heading {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .connect-options {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .form-section form input {
+    width: 100%;
+  }
+  .form-section form {
+    width: 90vw;
+  }
+  .form-section form textarea {
+    width: 100%;
+  }
+}
